@@ -36,7 +36,7 @@ const [user,setUser] = useState({
 //signOut
   const handleSignOut = () => {
      firebase.auth().signOut
-      .than(res => {
+      .then(res => {
         const signOutUser = {
           isSignedIn:false,
           name:'',
